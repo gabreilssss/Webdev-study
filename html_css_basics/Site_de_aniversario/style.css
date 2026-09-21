@@ -1,0 +1,27 @@
+body {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: #ffdab9;
+}
+
+.pfp_mom {
+    border-radius: 100%;
+    width: 300px;
+}
+
+.imagn {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.mensagem {
+    position: relative;
+    background-color: #f8ad9d;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px solid #f08080;
+    box-shadow: 0 4px 10px rgba(180, 100, 100, 0.2);
+}
