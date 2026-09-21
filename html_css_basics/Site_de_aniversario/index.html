@@ -1,36 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">   
-    <title>Feliz aniversario mãe!</title>
+
+    <title>Feliz aniversário mãe!</title>
 </head>
+
 <body>
-    <h1>Feliz aniversario mãe!😍</h1>
+
+    <h1>Feliz aniversário mãe!😍</h1>
+
     <img class="pfp_mom" src="eroni.png" alt="eroni">
-    <h3>Feliz 55 anos de vida🥳</h3>
+
+    <h3>Parabéns pelos 58 anos de vida🥳</h3>
 
     <div class="mensagem">
         <h2>Mensagem do Gabriel</h2>
-        <h3>Obrigado do fundo do meu coração por ser esta mãe carinhosa, incrível, e linda que sempre me ajudou por toda a minha vida!❤️</h3>
+        <h3>
+            Obrigado do fundo do meu coração por ser esta mãe carinhosa,
+            incrível, e linda que sempre me ajudou por toda a minha vida!❤️
+        </h3>
+
         <img class="imagn" src="mae_e_gabriel.jpg" alt="mãe e gabriel">
     </div>
 
     <div class="mensagem">
         <h2>Mensagem da Bianca</h2>
         <h3>*mensagem*</h3>
-        <img  class="imagn" src="" alt="imagen bianca e mãe">
+        <img class="imagn" src="" alt="imagem Bianca e mãe">
     </div>
 
     <div class="mensagem">
         <h2>Mensagem do Brian</h2>
         <h3>*mensagem*</h3>
-        <img  class="imagn" src="" alt="imagen brian e mãe">
+        <img class="imagn" src="" alt="imagem Brian e mãe">
     </div>
-   
+
+    <!-- Confetes -->
+    <div id="confetes"></div>
+
+    <!-- JavaScript -->
+    <script>
+        const container = document.getElementById("confetes");
+
+        const cores = [
+            "#ff4d6d",
+            "#ffd166",
+            "#06d6a0",
+            "#118ab2",
+            "#8338ec",
+            "#ff8fab"
+        ];
+
+        function soltarConfetes() {
+            for (let i = 0; i < 150; i++) {
+                setTimeout(criarConfete, i * 20);
+            }
+        }
+
+        function criarConfete() {
+            const confete = document.createElement("div");
+
+            confete.classList.add("confete");
+
+            confete.style.left = Math.random() * 100 + "vw";
+
+            confete.style.backgroundColor =
+                cores[Math.floor(Math.random() * cores.length)];
+
+            confete.style.animationDuration =
+                (Math.random() * 3 + 2) + "s";
+
+            confete.style.transform =
+                `rotate(${Math.random() * 360}deg)`;
+
+            container.appendChild(confete);
+
+            setTimeout(() => {
+                confete.remove();
+            }, 5000);
+        }
+        for (let i = 0; i < 100; i++) {
+    setTimeout(criarConfete, i * 30);
+}
+    </script>
+
 </body>
 </html>
