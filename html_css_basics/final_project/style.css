@@ -8,38 +8,54 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px 50px;
+    padding: 50px 5%;
 }
 
 .tourism-info{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 
 }
 
 
 .info-title{
+    display: inline-block;
     background-color: rgb(93, 93, 173);
-    padding:  5px;
+    padding:  5px 20px;
 }
 
 .article{
     display: flex;
-     margin: 50px;
-    box-shadow: 2px 2px 2px;
+    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1000px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 
 }
 
 .info-imagen{
-    max-width: 200px;
-    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 #footer{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(93, 93, 173);
+    padding: 30px 5%;
+
     
 }
 
@@ -57,4 +73,56 @@ body{
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 5px black;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    #header {
+        padding: 35px 20px;
+    }
+
+    .article {
+        flex-direction: column;
+        text-align: center;
+        margin: 30px 10px;
+    }
+
+    .info-imagen {
+        width: 150px;
+        height: 150px;
+    }
+
+    .article-text {
+        margin: 0;
+    }
+
+    .tourism-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    #header {
+        padding: 25px 15px;
+    }
+
+    .article {
+        margin: 20px 5px;
+        padding: 15px;
+    }
+
+    .info-imagen {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info-title {
+        padding: 5px 12px;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
