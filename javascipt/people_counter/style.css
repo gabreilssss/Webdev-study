@@ -1,0 +1,43 @@
+body{
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://res.klook.com/image/upload/q_85/c_fill,w_750/v1758182923/mnlq4btqsbbotx0jdd0k.jpg");
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button{
+    border: none;
+    padding-top: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+   border-radius: 5px;
+}
+
+button:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#increment-btn{
+    background-color: darkred;
+}
+
+#save-btn{
+    background-color: green;
+}
