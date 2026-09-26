@@ -1,0 +1,67 @@
+
+@font-face {
+    font-family: Seven-segment;
+    src: url(../game_score_counter/seven_segment/Seven\ Segment.ttf);
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.score{
+    font-family: Seven-segment;
+    font-weight: bold;
+    font-size: 100px;
+    margin: 10px;
+    text-align: center;
+    color: red;
+    background: black;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+.score-title{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.scor-btn{
+    text-align: center;
+}
+
+.btn-add{
+    font-family: Seven-segment;
+    background:rgb(11, 11, 116);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.btn-add:hover{
+     border: 1px solid black;
+}
+
+.ng-btn{
+    display: block;
+    margin: 10px;
+}
+
+
+#container{
+    display: block;
+    text-align: center;
+    background: rgb(11, 11, 116);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.game{
+    display: flex;
+    justify-content: space-around;
+}
