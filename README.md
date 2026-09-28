@@ -1,2 +1,2 @@
 # Webdev-study
-My results for the fullstack scrimba fullstack developer course
+My results for the  scrimba fullstack developer "Become a Fullstack Developer from Scratch – Full Beginner’s Tutorial" course

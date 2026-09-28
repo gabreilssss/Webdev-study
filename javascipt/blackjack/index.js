@@ -1,5 +1,6 @@
 let firstCard = 6
 let secondCard = 2
+let cards = [firstCard,secondCard]
 let cardSum = firstCard + secondCard
 let hasBlackjack = false
 let isAlive = true
@@ -33,14 +34,14 @@ function updateGame(){
     if (isAlive){
         dealAgain.style.display = "inline"
     }
-    cardMessage.textContent = "Cards: " + firstCard + "  " + secondCard
+    cardMessage.textContent = "Cards: " + cards[0] + "  " + cards[1]
     sumMessage.textContent = "Sum: " + cardSum
     resultMessage.textContent = message
 }
 
 function drawCard(){
-    let thirdCard = 7
-    cardSum += thirdCard
+    cards.push(1)
+    cardSum += cards[2]
     updateGame()
 
 
