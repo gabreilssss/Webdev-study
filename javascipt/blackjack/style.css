@@ -6,6 +6,24 @@ body{
 }
 
 
+
+
+
+button{
+    background: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;
+    border: 2px solid white;
+    margin-bottom: 5px ;
+}
+
+button:hover{
+    font-size: 30px;
+}
+
 p{
     color: white;
     font-weight: bold;
