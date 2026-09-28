@@ -1,0 +1,23 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHBSmsR856wQhsTRsDix1N_vOPMBCiKev53u8Dx2qqfA&s=10");
+    background-size: cover; 
+    text-align: center;
+}
+
+
+p{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#message-el{
+    font-style: italic;
+
+}
+
+h1{
+    color: goldenrod;
+    font-size: 50px;
+}
