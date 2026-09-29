@@ -1,9 +1,10 @@
-let firstCard = 6
-let secondCard = 2
-let cards = [firstCard,secondCard]
-let cardSum = firstCard + secondCard
+let firstCard = 0
+let secondCard = 0
+let cardSum = 0
+let cards = []
+let numCards = 0
 let hasBlackjack = false
-let isAlive = true
+let isAlive = false
 
 
 let sumMessage = document.getElementById("sum-message-el")
@@ -12,10 +13,30 @@ let resultMessage = document.getElementById("message-el")
 let dealAgain = document.getElementById("deal-again-btn")
 let message = ""
 
+function getRandomCard(){
 
+    let random = Math.floor(Math.random()*13)+1
+    if (random === 1){
+        return 11
+    } else if (random >= 11){
+        return 10
+
+    } else{
+        return random
+    }
+    
+}
 
 function startGame(){
+    document.getElementById("game-start-btn").textContent = "RESTART"
+    firstCard = getRandomCard()
+    secondCard = getRandomCard() 
+    cards.push(firstCard,secondCard)
+    hasBlackjack = false
+    isAlive = true
     cardSum = firstCard + secondCard
+    numCards = 0
+    cardMessage.textContent = "Cards: "
     updateGame()
 }
 
@@ -31,17 +52,29 @@ function updateGame(){
         isAlive = false
     }
 
-    if (isAlive){
+    if (isAlive === true && hasBlackjack === false ){
         dealAgain.style.display = "inline"
+    } else{
+        document.getElementById("game-start-btn").textContent = "START GAME"
+        dealAgain.style.display = "none"
     }
-    cardMessage.textContent = "Cards: " + cards[0] + "  " + cards[1]
+
+    for(let i = numCards; i < cards.length; i++){
+
+        cardMessage.textContent += cards[i] + " "
+        numCards += 1
+    }
+    
     sumMessage.textContent = "Sum: " + cardSum
     resultMessage.textContent = message
 }
 
 function drawCard(){
-    cards.push(1)
-    cardSum += cards[2]
+
+    let newCard = getRandomCard()
+    cardSum += newCard
+    cards.push(newCard)
+    
     updateGame()
 
 
