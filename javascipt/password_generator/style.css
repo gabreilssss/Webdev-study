@@ -1,18 +1,52 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(45, 61, 78);
+    background-color: #1C2430;
+    margin: 20px;
 }
 
 .green-txt{
-    color: rgb(35, 133, 35);
+    color: #4AD983;
+}
+
+.main{
+    border-bottom: 1px solid #848A94;
+    margin: 20px;
+    
+}
+
+.password-div{
+    margin: 20px;
+}
+
+#gen-btn{
+    margin-bottom: 20px;
+    border: none;
+    color: white;
+    background:#4AD983 ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#gen-btn:hover{
+    background:#8bdbab ;
+}
+
+.password{    
+    background: #232F40;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px ;
 }
 
 h1{
-    margin-bottom: 5;
+    margin-bottom: 0;
+    color: white;
 }
 
 h3{
-    margin: 0;
-    color: rgb(97, 92, 92);
+    margin-bottom: 20px;
+    color: #848A94;
 
 }
