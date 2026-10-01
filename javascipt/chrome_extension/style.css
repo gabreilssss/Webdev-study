@@ -25,6 +25,12 @@ button:hover{
     background-color: #6d8e5a ;
 }
 
+#delete-btn{
+    color: #5f9341;
+    background: none;
+    border: 1px solid #5f9341;
+}
+
 ul{
     margin-top: 20px;
     list-style: none;
